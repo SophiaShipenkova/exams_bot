@@ -46,7 +46,10 @@ async def button_click(update, context):
             [InlineKeyboardButton("Моделирование систем", callback_data='subbutton1.3')],
             [InlineKeyboardButton("Технологии программирования", callback_data='subbutton1.4')],
             [InlineKeyboardButton("Инструментальные средства информационных систем", callback_data='subbutton1.5')],
-            
+            [InlineKeyboardButton("Вычислительная математика", callback_data='subbutton1.6')],
+            [InlineKeyboardButton("Учебная практика", callback_data='subbutton1.7')],
+            [InlineKeyboardButton("Типографика", callback_data='subbutton1.8')],
+            [InlineKeyboardButton("История искусств", callback_data='subbutton1.9')],
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.message.reply_text('Выберите дисциплину:', reply_markup=reply_markup)
